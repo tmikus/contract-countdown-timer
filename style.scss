@@ -1,3 +1,7 @@
+$backgroundColour: black;
+$countdownColour: cornflowerblue;
+$textColour: white;
+
 *
 {
     box-sizing: border-box;
@@ -13,7 +17,7 @@ body
 
 body
 {
-    background: black;
+    background: $backgroundColour;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 34px;
 }
@@ -29,7 +33,7 @@ body
 
 .info-text
 {
-    color: white;
+    color: $textColour;
     font-size: 1.5em;
     text-align: center;
     width: 700px;
@@ -37,15 +41,15 @@ body
 
 .watch-face
 {
-    color: white;
+    color: $textColour;
     text-align: center;
     width: 700px;
 }
 
 .number
 {
-    background: cornflowerblue;
-    border: 1px solid cornflowerblue;
+    background: $countdownColour;
+    border: 1px solid $countdownColour;
     border-radius: 50% 50%;
     padding: 0.4em;
 }
@@ -55,11 +59,11 @@ body
         $degrees: $index * 360deg / 100;
 
         @if $degrees <= 180 {
-            background-image: linear-gradient(90 + $degrees, transparent 50%, black 50%),
-                              linear-gradient(90deg, black 50%, transparent 50%);
+            background-image: linear-gradient(90 + $degrees, transparent 50%, $backgroundColour 50%),
+                              linear-gradient(90deg, $backgroundColour 50%, transparent 50%);
         } @else {
-            background-image: linear-gradient($degrees - 90, transparent 50%, cornflowerblue 50%),
-                              linear-gradient(90deg, black 50%, transparent 50%);
+            background-image: linear-gradient($degrees - 90, transparent 50%, $countdownColour 50%),
+                              linear-gradient(90deg, $backgroundColour 50%, transparent 50%);
         }
     }
 }
