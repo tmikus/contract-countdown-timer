@@ -4,6 +4,6 @@
     "version": "0.1.0",
     "command": "./node_modules/.bin/node-sass",
     "isShellCommand": true,
-    "args": ["style.scss", "style.css"],
+    "args": ["scss/style.scss", "css/style.css"],
     "showOutput": "always"
 }
