@@ -1,0 +1,22 @@
+{
+  "name": "contract-countdown-timer",
+  "version": "1.0.0",
+  "description": "A countdown timer for the current contract.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmikus/contract-countdown-timer.git"
+  },
+  "author": "Tomasz Mikus <mikus.tomasz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmikus/contract-countdown-timer/issues"
+  },
+  "homepage": "https://github.com/tmikus/contract-countdown-timer#readme",
+  "devDependencies": {
+    "node-sass": "^3.10.0"
+  }
+}

@@ -1,43 +1,339 @@
-*
-{
-    box-sizing: border-box;
-}
+* {
+  box-sizing: border-box; }
 
 html,
-body
-{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
-body
-{
-    background: black;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 34px;
-}
+body {
+  background: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 34px; }
 
-#countdown-panel
-{
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
+#countdown-panel {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%; }
 
-}
+.info-text {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  width: 700px; }
 
-.info-text
-{
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    width: 700px;
-}
+.watch-face {
+  color: white;
+  text-align: center;
+  width: 700px; }
 
-.watch-face
-{
-    color: white;
-    text-align: center;
-    width: 700px;
-}
+.number {
+  background: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  border-radius: 50% 50%;
+  padding: 0.4em; }
+
+.completed-0 {
+  background-image: linear-gradient(90deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-1 {
+  background-image: linear-gradient(93.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-2 {
+  background-image: linear-gradient(97.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-3 {
+  background-image: linear-gradient(100.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-4 {
+  background-image: linear-gradient(104.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-5 {
+  background-image: linear-gradient(108deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-6 {
+  background-image: linear-gradient(111.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-7 {
+  background-image: linear-gradient(115.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-8 {
+  background-image: linear-gradient(118.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-9 {
+  background-image: linear-gradient(122.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-10 {
+  background-image: linear-gradient(126deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-11 {
+  background-image: linear-gradient(129.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-12 {
+  background-image: linear-gradient(133.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-13 {
+  background-image: linear-gradient(136.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-14 {
+  background-image: linear-gradient(140.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-15 {
+  background-image: linear-gradient(144deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-16 {
+  background-image: linear-gradient(147.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-17 {
+  background-image: linear-gradient(151.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-18 {
+  background-image: linear-gradient(154.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-19 {
+  background-image: linear-gradient(158.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-20 {
+  background-image: linear-gradient(162deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-21 {
+  background-image: linear-gradient(165.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-22 {
+  background-image: linear-gradient(169.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-23 {
+  background-image: linear-gradient(172.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-24 {
+  background-image: linear-gradient(176.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-25 {
+  background-image: linear-gradient(180deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-26 {
+  background-image: linear-gradient(183.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-27 {
+  background-image: linear-gradient(187.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-28 {
+  background-image: linear-gradient(190.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-29 {
+  background-image: linear-gradient(194.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-30 {
+  background-image: linear-gradient(198deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-31 {
+  background-image: linear-gradient(201.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-32 {
+  background-image: linear-gradient(205.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-33 {
+  background-image: linear-gradient(208.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-34 {
+  background-image: linear-gradient(212.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-35 {
+  background-image: linear-gradient(216deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-36 {
+  background-image: linear-gradient(219.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-37 {
+  background-image: linear-gradient(223.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-38 {
+  background-image: linear-gradient(226.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-39 {
+  background-image: linear-gradient(230.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-40 {
+  background-image: linear-gradient(234deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-41 {
+  background-image: linear-gradient(237.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-42 {
+  background-image: linear-gradient(241.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-43 {
+  background-image: linear-gradient(244.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-44 {
+  background-image: linear-gradient(248.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-45 {
+  background-image: linear-gradient(252deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-46 {
+  background-image: linear-gradient(255.6deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-47 {
+  background-image: linear-gradient(259.2deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-48 {
+  background-image: linear-gradient(262.8deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-49 {
+  background-image: linear-gradient(266.4deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-50 {
+  background-image: linear-gradient(270deg, transparent 50%, black 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-51 {
+  background-image: linear-gradient(93.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-52 {
+  background-image: linear-gradient(97.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-53 {
+  background-image: linear-gradient(100.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-54 {
+  background-image: linear-gradient(104.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-55 {
+  background-image: linear-gradient(108deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-56 {
+  background-image: linear-gradient(111.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-57 {
+  background-image: linear-gradient(115.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-58 {
+  background-image: linear-gradient(118.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-59 {
+  background-image: linear-gradient(122.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-60 {
+  background-image: linear-gradient(126deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-61 {
+  background-image: linear-gradient(129.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-62 {
+  background-image: linear-gradient(133.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-63 {
+  background-image: linear-gradient(136.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-64 {
+  background-image: linear-gradient(140.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-65 {
+  background-image: linear-gradient(144deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-66 {
+  background-image: linear-gradient(147.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-67 {
+  background-image: linear-gradient(151.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-68 {
+  background-image: linear-gradient(154.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-69 {
+  background-image: linear-gradient(158.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-70 {
+  background-image: linear-gradient(162deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-71 {
+  background-image: linear-gradient(165.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-72 {
+  background-image: linear-gradient(169.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-73 {
+  background-image: linear-gradient(172.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-74 {
+  background-image: linear-gradient(176.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-75 {
+  background-image: linear-gradient(180deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-76 {
+  background-image: linear-gradient(183.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-77 {
+  background-image: linear-gradient(187.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-78 {
+  background-image: linear-gradient(190.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-79 {
+  background-image: linear-gradient(194.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-80 {
+  background-image: linear-gradient(198deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-81 {
+  background-image: linear-gradient(201.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-82 {
+  background-image: linear-gradient(205.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-83 {
+  background-image: linear-gradient(208.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-84 {
+  background-image: linear-gradient(212.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-85 {
+  background-image: linear-gradient(216deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-86 {
+  background-image: linear-gradient(219.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-87 {
+  background-image: linear-gradient(223.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-88 {
+  background-image: linear-gradient(226.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-89 {
+  background-image: linear-gradient(230.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-90 {
+  background-image: linear-gradient(234deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-91 {
+  background-image: linear-gradient(237.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-92 {
+  background-image: linear-gradient(241.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-93 {
+  background-image: linear-gradient(244.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-94 {
+  background-image: linear-gradient(248.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-95 {
+  background-image: linear-gradient(252deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-96 {
+  background-image: linear-gradient(255.6deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-97 {
+  background-image: linear-gradient(259.2deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-98 {
+  background-image: linear-gradient(262.8deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-99 {
+  background-image: linear-gradient(266.4deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }
+
+.completed-100 {
+  background-image: linear-gradient(270deg, transparent 50%, cornflowerblue 50%), linear-gradient(90deg, black 50%, transparent 50%); }

@@ -2,12 +2,18 @@ window.addEventListener("load", function ()
 {
     var celebrationTime = moment("2016-12-31", "YYYY-MM-DD")
 
-    function setDisplayValues(months, days, hours, minutes, seconds)
+    function setDisplayValues(months, days, hours, minutes, seconds, millisecondsLeft)
     {
         monthsDisplay.innerText = months > 0 ? (months + " months, ") : "";
         daysDisplay.innerText = days > 0 ? (days + " days, ") : "";
+
+        hoursDisplay.className = "number completed-" + Math.floor(minutes / 60 * 100)
         hoursDisplay.innerText = (hours < 10 ? "0" : "") + hours;
+
+        minutesDisplay.className = "number completed-" + Math.floor(seconds / 60 * 100);
         minutesDisplay.innerText = (minutes < 10 ? "0" : "") + minutes;
+        
+        secondsDisplay.className = "number completed-" + Math.floor(millisecondsLeft / 10);
         secondsDisplay.innerText = (seconds < 10 ? "0" : "") + seconds;
     }
 
@@ -27,7 +33,10 @@ window.addEventListener("load", function ()
         now.add(minutesLeft, "minutes");
 
         var secondsLeft = Math.floor(celebrationTime.diff(now, "seconds"));
-        setDisplayValues(monthsLeft, daysLeft, hoursLeft, minutesLeft, secondsLeft);
+        now.add(secondsLeft, "seconds");
+
+        var millisecondsLeft = Math.floor(celebrationTime.diff(now, "milliseconds"));
+        setDisplayValues(monthsLeft, daysLeft, hoursLeft, minutesLeft, secondsLeft, millisecondsLeft);
     }
 
     var monthsDisplay = document.getElementById("months");
@@ -37,5 +46,5 @@ window.addEventListener("load", function ()
     var secondsDisplay = document.getElementById("seconds");
 
     updateDisplays();
-    setInterval(updateDisplays, 1000);
+    setInterval(updateDisplays, 10);
 });
